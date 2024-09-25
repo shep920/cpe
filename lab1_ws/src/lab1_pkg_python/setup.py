@@ -11,6 +11,9 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
+     py_modules=[
+        'talker',
+    ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='changeme',
