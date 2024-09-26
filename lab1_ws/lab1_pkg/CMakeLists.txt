@@ -11,7 +11,6 @@ find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)  # Corrected from "rclpp" to "rclcpp"
 find_package(rclpy REQUIRED)
 
-
 include_directories(include)
 
 # Create cpp executables
@@ -27,9 +26,11 @@ install(TARGETS
 # Install Py modules
 ament_python_install_package(${PROJECT_NAME})
 
-# Install Py executables
+# Install Py executables (Add talker.py and relay.py)
 install(PROGRAMS
   scripts/py_node.py
+  scripts/talker.py       # Add talker.py here
+  scripts/relay.py        # Add relay.py here
   DESTINATION lib/${PROJECT_NAME}
 )
 
