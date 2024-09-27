@@ -18,7 +18,7 @@ This ROS 2 package supports both Python and C++ nodes. The package includes:
    Clone this package into your ROS 2 workspace `src` folder:
    ```bash
    cd ~/lab1_ws/src
-   git clone <your-repo-url> lab1_pkg
+   git clone <url> lab1_pkg
    ```
 
 2. **Install Dependencies**:
