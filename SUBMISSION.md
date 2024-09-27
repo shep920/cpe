@@ -18,4 +18,4 @@
 ### Q3: Do you have to call colcon build again after you've changed a launch file in your package?
 
 **Answer:**  
-**Yes**, you need to call `colcon build` after changing the `launch.py` file for the changes to take effect.
+**Yes**, you need to call `colcon build` after changing the `launch.py` file for the changes to take effect. I tested this by adjusting a file in the launch.py and it did not affect the run command. 
