@@ -26,12 +26,17 @@ install(TARGETS
 # Install Py modules
 ament_python_install_package(${PROJECT_NAME})
 
-# Install Py executables (Add talker.py and relay.py)
+# Install launch files
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(PROGRAMS
   scripts/py_node.py
-  scripts/talker.py       # Add talker.py here
-  scripts/relay.py        # Add relay.py here
+  scripts/talker.py
+  scripts/relay.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
 
 ament_package()
